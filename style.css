@@ -1,33 +1,81 @@
+/****************************/
+/* Kalpurush FONT */
+/*****************************/
+
+@import url('https://fonts.maateen.me/kalpurush/font.css');
+
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 @font-face {
-    font-family: 'mukti';
-    src: url('assets/font/mukti.ttf');
-}
-
-@font-face {
-    font-family: 'Nikosh';
-    src: url('assets/font/Nikosh.ttf');
+    font-family: 'SolaimanLipi';
+    src: url('assets/font/SolaimanLipi_20-04-07.ttf');
     font-weight: bold;
 }
 
-body {
+@font-face {
+    font-family: 'kalpurush';
+    src: url('assets/font/kalpurush.ttf');
+    font-weight: bold;
+}
+
+
+:root {
+    --primary-color: #00BFA5;
+    --secondary-color: #00BFA5;
+    --tertiary-color: #00BFA5;
+    --text-color: #444;
+    --text-color-light: #fff;
+    --navbar-link-color: #fff;
+}
+
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+::after,
+::before {
+    transition: all 300ms ease-in-out;
+}
+
+html {
+    scroll-behavior: smooth;
     font-size: 16px;
-    background-color: #f8f9fa;
-    font-family: Nikosh;
+}
+
+body {
+    font-family: 'SolaimanLipi', Arial, Helvetica, sans-serif;
+    text-rendering: optimizeLegibility;
+    margin: 0;
+    color: #444;
+    background: #f1f5f9;
 }
 
 a {
     text-decoration: none;
 }
 
-.navbar-brand img {
-    max-width: 240px !important;
+.logo {
+    display: flex;
+    gap: 12px;
+    justify-content: start;
+    align-items: center;
+    color: #111827;
+    font-weight: 700 !important;
 }
+
+.logo h3 {
+    font-size: 20px;
+}
+
+.logo img {
+    max-width: 80px;
+}
+
 
 @media screen and (min-width: 1366px) {
     .main-navbar {
@@ -39,7 +87,7 @@ a {
 
 /* mega menu */
 .dropdown-menu-lg {
-    min-width: 800px;
+    min-width: 200px;
     padding: 2rem;
 }
 
@@ -47,13 +95,94 @@ a {
     margin-bottom: 1rem;
 }
 
+.news-title {
+    color: #042f2e;
+    font-size: 18px;
+}
+
 .dot {
-    height: 15px;
-    width: 15px;
+    height: 12px;
+    width: 12px;
     margin-left: 50px;
-    margin-right: 50px;
+    margin-right: 16px;
     margin-top: 2px !important;
     background-color: rgb(3, 88, 32);
     border-radius: 50%;
     display: inline-block;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+/* main css */
+.service-box {
+    border: 2px solid white;
+    padding: 12px;
+    border-radius: 10px;
+    transition: 0.4s;
+    margin-bottom: 2rem !important;
+}
+
+.service-box:hover {
+    border: 2px solid #007178;
+}
+
+.service-item {
+    border-top: 1px solid #F4F4F4;
+    border-right: 1px solid #F4F4F4;
+    transition: 0.3s;
+    position: relative;
+    z-index: 10;
+}
+
+.service-icon {
+    border-radius: 10px;
+}
+
+.service-icon img {
+    margin: 25px 0px;
+    height: 170px;
+    width: auto;
+}
+
+.serviceTitle {
+    font-size: 28px;
+    color: #005049;
+    font-weight: 500;
+}
+
+.btn-package {
+    background: transparent;
+    border: 1px solid #007178;
+    color: #007178;
+    font-size: 22px;
+}
+
+.btn-package:hover {
+    background: #008767;
+    color: white !important;
+    border: 1px solid #007178;
+    font-size: 22px;
+}
+
+.w-90 {
+    width: 90%;
+}
+
+/* footer css */
+.footer {
+    background: #262C35;
+    color: white;
+}
+
+.footer .nav-item .nav-link {
+    color: #d1d5db;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: .4s;
+}
+
+.footer .nav-item .nav-link:hover {
+    color: white;
 }
