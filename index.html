@@ -8,7 +8,7 @@
   <meta content="" name="description">
   <!-- Favicon -->
   <link href="img/favicon.ico" rel="icon">
-  <title>Project Template</title>
+  <title>Soebooks </title>
   <!-- bootstrap css -->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <!-- template csss -->
@@ -37,7 +37,8 @@
                 <button type="submit" id="btnSearch" class="btn btn-success"> অনুসন্ধান করুন </button>
               </div>
             </form>
-            <a href="" class="btn btn-outline-success rounded-1">লগইন</a>
+            <a href="#" class="btn btn-outline-success rounded-1" data-bs-toggle="modal"
+              data-bs-target="#loginModal">লগইন</a>
           </div>
         </div>
       </div>
@@ -200,7 +201,7 @@
         <div class="col-md-4 col-sm-6 service-item">
           <div class="service-box text-center mb-3 shadow-sm">
             <div class="service-icon" style="background-color: #478072;">
-              <img src="/assets/img/1.png" alt="">
+              <img src="/assets/icon/hierarchy.png" alt="">
             </div>
             <h3 class="serviceTitle mt-3">মন্ত্রণালয়/বিভাগ</h3>
             <a class="btn btn-package my-3 w-90" href="#">অনুসন্ধান করুন</a>
@@ -210,7 +211,7 @@
         <div class="col-md-4 col-sm-6 service-item">
           <div class="service-box text-center mb-3 shadow-sm">
             <div class="service-icon" style="background-color: #9B8449;">
-              <img src="/assets/img/1.png" alt="">
+              <img src="/assets/icon/state_institution.png" alt="">
             </div>
             <h3 class="serviceTitle mt-3">রাষ্ট্রায়ত্ত প্রতিষ্ঠান</h3>
             <a class="btn btn-package my-3 w-90" href="#">অনুসন্ধান করুন</a>
@@ -220,7 +221,7 @@
         <div class="col-md-4 col-sm-6 service-item">
           <div class="service-box text-center mb-3 shadow-sm">
             <div class="service-icon" style="background-color: #0f766e;">
-              <img src="/assets/img/1.png" alt="">
+              <img src="/assets/icon/autonomous_institutions.png" alt="">
             </div>
             <h3 class="serviceTitle mt-3">স্বায়ত্তশাসিত প্রতিষ্ঠান</h3>
             <a class="btn btn-package my-3 w-90" href="#">অনুসন্ধান করুন</a>
@@ -230,7 +231,7 @@
         <div class="col-md-4 col-sm-6 service-item">
           <div class="service-box text-center mb-3 shadow-sm">
             <div class="service-icon" style="background-color: #4d7c0f;">
-              <img src="/assets/img/1.png" alt="">
+              <img src="/assets/icon/finicial.png" alt="">
             </div>
             <h3 class="serviceTitle mt-3">রাষ্ট্রায়ত্ত আর্থিক প্রতিষ্ঠান</h3>
             <a class="btn btn-package my-3 w-90" href="#">অনুসন্ধান করুন</a>
@@ -239,8 +240,8 @@
 
         <div class="col-md-4 col-sm-6 service-item">
           <div class="service-box text-center mb-3 shadow-sm">
-            <div class="service-icon" style="background-color: #4b6837;">
-              <img src="/assets/img/1.png" alt="">
+            <div class="service-icon" style="background-color: #81adc3;">
+              <img src="/assets/icon/local_gov.png" alt="">
             </div>
             <h3 class="serviceTitle mt-3">স্থানীয় সরকার প্রতিষ্ঠান</h3>
             <a class="btn btn-package my-3 w-90" href="#">অনুসন্ধান করুন</a>
@@ -250,7 +251,7 @@
         <div class="col-md-4 col-sm-6 service-item">
           <div class="service-box text-center mb-3 shadow-sm">
             <div class="service-icon" style="background-color:#b45309;">
-              <img src="/assets/img/1.png" alt="">
+              <img src="/assets/icon/question.png" alt="">
             </div>
             <h3 class="serviceTitle mt-3">সচরাচর জিজ্ঞাসিত প্রশ্ন</h3>
             <a class="btn btn-package my-3 w-90" href="#">আরো জানুন</a>
@@ -331,6 +332,36 @@
       </div>
     </div>
   </footer>
+  <!-- login modal -->
+  <!-- Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="text-center mb-3">
+            <h3>Login</h3>
+          </div>
+          <form accept="#" method="post">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Remember me</label>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-success">Login</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
   <!-- bootstrap js -->
