@@ -76,6 +76,14 @@ a {
     max-width: 80px;
 }
 
+.news-left {
+    width: 20%
+}
+
+.news-right {
+    width: 80%
+}
+
 
 @media screen and (min-width: 1366px) {
     .main-navbar {
