@@ -22,7 +22,7 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-5">
-          <a class="logo" href="#">
+          <a class="logo" href="index.html">
             <img class="d-inline-block" src="assets/img/logo.png" alt="">
             <h3>রাষ্ট্রায়ত্ত ও স্বায়ত্তশাসিত প্রতিষ্ঠানসমূহের <br> আইন ও প্রবিধানমালা
             </h3>
@@ -38,8 +38,11 @@
                 <button type="submit" id="btnSearch" class="btn btn-success"> অনুসন্ধান করুন </button>
               </div>
             </form>
-            <a href="#" class="btn btn-outline-success rounded-1" data-bs-toggle="modal"
-              data-bs-target="#loginModal">লগইন</a>
+            <!--   login modal-->
+            <!-- <a href="#" class="btn btn-outline-success rounded-1" data-bs-toggle="modal"
+                                        data-bs-target="#loginModal">লগইন</a>  -->
+            <!-- login page -->
+            <a href="login.html" class="btn btn-outline-success rounded-1">লগইন</a>
           </div>
         </div>
       </div>
@@ -55,6 +58,9 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">হোম</a>
+          </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle">
               আইন ও প্রবিধানমালা
@@ -273,8 +279,9 @@
         <form action="" class="d-flex justify-content-center">
           <div class="form-group w-90">
             <div class="input-group">
-              <span class="input-group-text"> সাল/বৎসর ভিত্তিক অনুসন্ধান </span>
-              <input type="number" name="pyear" class="form-control form-control-lg">
+              <span class="input-group-text yearwise-search"> সাল/বৎসর ভিত্তিক অনুসন্ধান </span>
+              <input type="number" name="pyear" class="form-control form-control-lg search-by-year"
+                placeholder=" সাল/বৎসর ভিত্তিক অনুসন্ধান">
               <button type="submit" id="btnyear" class="btn btn-success"> অনুসন্ধান করুন </button>
             </div>
           </div>

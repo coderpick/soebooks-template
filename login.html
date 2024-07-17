@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+    <title>Soebooks </title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- template csss -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+    <!-- topbar -->
+    <header class="py-2">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <a class="logo" href="index.html">
+                        <img class="d-inline-block" src="assets/img/logo.png" alt="">
+                        <h3>রাষ্ট্রায়ত্ত ও স্বায়ত্তশাসিত প্রতিষ্ঠানসমূহের <br> আইন ও প্রবিধানমালা
+                        </h3>
+                    </a>
+                </div>
+                <div class="col-lg-7 d-flex justify-content-lg-end justify-content-center">
+                    <div class="d-flex gap-4 search-box">
+                        <form class="w-100">
+                            <div class="input-group">
+                                <span class="input-group-text search-box-label"> শব্দ ভিত্তিক অনুসন্ধান </span>
+                                <input type="text" name="pword" class="form-control"
+                                    placeholder=" অনুসন্ধানের জন্য এখানে শব্দ লিখুন...">
+                                <button type="submit" id="btnSearch" class="btn btn-success"> অনুসন্ধান করুন </button>
+                            </div>
+                        </form>
+                        <!--   login modal-->
+                        <!-- <a href="#" class="btn btn-outline-success rounded-1" data-bs-toggle="modal"
+                            data-bs-target="#loginModal">লগইন</a>  -->
+                        <!-- login page -->
+                        <a href="login.html" class="btn btn-outline-success rounded-1">লগইন</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-xl sticky-top .bg-success-subtle" style="background-color: #e3f2fd;">
+        <div class="container-fluid main-navbar">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">হোম</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle">
+                            আইন ও প্রবিধানমালা
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="megaMenuDropdown">
+                            <li><a class="dropdown-item" href="#">আইনসমূহ</a></li>
+                            <li><a class="dropdown-item" href="#">প্রবিধানসমূহ</a></li>
+                            <li><a class="dropdown-item" href="#">পেনশন প্রবিধানসমূহ</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="lawDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">আইন ও প্রবিধানমালার সূচিপত্র</a>
+
+                        <ul class="dropdown-menu" aria-labelledby="lawDropdown">
+                            <li><a class="dropdown-item" href="">কালানুক্রমিক সূচি</a></li>
+                            <li><a class="dropdown-item" href="">বর্ণনাক্রমিক সূচি</a></li>
+                            <li><a class="dropdown-item" href="">বিষয়ভিত্তিক সূচি</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="countryDropdonw" role="button"
+                            data-bs-toggle="dropdown" aria-disabled="false">রাষ্ট্রায়ত্ত প্রতিষ্ঠান</a>
+                        <ul class="dropdown-menu" aria-labelledby="countryDropdonw">
+                            <li><a class="dropdown-item" href="">কর্পোরেশন</a></li>
+                            <li><a class="dropdown-item" href="">রাষ্ট্রায়ত্ত কোম্পানি</a></li>
+                            <li><a class="dropdown-item" href="">অন্যান্য রাষ্ট্রায়ত্ত প্রতিষ্ঠান</a></li>
+                        </ul>
+
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            স্বায়ত্তশাসিত প্রতিষ্ঠান
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">কর্তৃপক্ষ</a></li>
+                            <li><a class="dropdown-item" href="#">কমিশন</a></li>
+                            <li><a class="dropdown-item" href="#">বোর্ড</a></li>
+                            <li><a class="dropdown-item" href="#">কাউন্সিল/পরিষদ</a></li>
+                            <li><a class="dropdown-item" href="#">একাডেমি</a></li>
+                            <li><a class="dropdown-item" href="#">বিশ্ববিদ্যালয়</a></li>
+                            <li><a class="dropdown-item" href="#">ইনস্টিটিউট</a></li>
+                            <li><a class="dropdown-item" href="#">ট্রাস্ট</a></li>
+                            <li><a class="dropdown-item" href="#">ফাউন্ডেশন</a></li>
+                            <li><a class="dropdown-item" href="#">কেন্দ্র</a></li>
+                            <li><a class="dropdown-item" href="#">সংস্থা</a></li>
+                            <li><a class="dropdown-item" href="#">যাদুঘর</a></li>
+                            <li><a class="dropdown-item" href="#">অন্যান্য প্রতিষ্ঠান</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            রাষ্ট্রায়ত্ত আর্থিক প্রতিষ্ঠান
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">বাংলাদেশ ব্যাংক</a></li>
+                            <li><a class="dropdown-item" href="#">রাষ্ট্রয়াত্ত ব্যাংক</a></li>
+                            <li><a class="dropdown-item" href="#">বিশেষায়িত ব্যাংক</a></li>
+                            <li><a class="dropdown-item" href="#">অ-তফসিলি ব্যাংক</a></li>
+                            <li><a class="dropdown-item" href="#">ব্যাংক বহির্ভূত আর্থিক প্রতিষ্ঠান</a></li>
+                            <li><a class="dropdown-item" href="#">রাষ্ট্রয়াত্ত বীমা কোম্পানি</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            স্থানীয় সরকার প্রতিষ্ঠান
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">সিটি কর্পোরেশন</a></li>
+                            <li><a class="dropdown-item" href="#">পৌরসভা</a></li>
+                            <li><a class="dropdown-item" href="#">পার্বত্য আঞ্চলিক পরিষদ</a></li>
+                            <li><a class="dropdown-item" href="#">জেলা পরিষদ</a></li>
+                            <li><a class="dropdown-item" href="#">পার্বত্য জেলা পরিষদ</a></li>
+                            <li><a class="dropdown-item" href="#">উপজেলা পরিষদ</a></li>
+                            <li><a class="dropdown-item" href="#">ইউনিয়ন পরিষদ</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- login section -->
+    <!-- Section: Design Block -->
+    <section class="">
+        <!-- Jumbotron -->
+        <div class="px-4 py-5 px-md-5 text-center text-lg-start" style="background-color: hsl(0, 0%, 96%)">
+            <div class="container">
+                <div class="row gx-lg-5 align-items-center justify-content-sm-center h-100">
+                    <div class="col-lg-6 mb-md-3 mb-lg-0">
+                        <h1 class="my-md-4 my-5 display-5  fw-bold ls-tight">
+                            রাষ্ট্রায়ত্ত ও স্বায়ত্তশাসিত প্রতিষ্ঠানসমূহের
+                            <span class="text-primary">আইন ও প্রবিধানমালা</span>
+                        </h1>
+                        <p style="color: hsl(217, 10%, 50.8%)">
+                        </p>
+                    </div>
+
+                    <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-7 col-sm-9">
+                        <div class="card shadow-lg border-0">
+                            <div class="card-body p-5">
+                                <h1 class="fs-4 card-title fw-bold mb-4">সাইন ইন</h1>
+                                <form method="POST" action="#" class="needs-validation" novalidate=""
+                                    autocomplete="off">
+                                    <div class="mb-3 text-start">
+                                        <label class="mb-2 text-muted" for="email">ইমেল আইডি</label>
+                                        <input id="email" type="email" class="form-control" name="email" value=""
+                                            placeholder="আপনার ইমেল দিন" required autofocus>
+                                    </div>
+
+                                    <div class="mb-3 text-start">
+                                        <div class="mb-2 w-100">
+                                            <label class="text-muted" for="password">পাসওয়ার্ড</label>
+                                            <a href="forgot.html" class="float-end">
+                                                পাসওয়ার্ড ভুলে গেছেন?
+                                            </a>
+                                        </div>
+                                        <input id="password" type="password" class="form-control" name="password"
+                                            placeholder="আপনার পাসওয়ার্ড দিন" required>
+                                    </div>
+
+                                    <div class="d-flex align-items-center">
+                                        <div class="form-check">
+                                            <input type="checkbox" name="remember" id="remember"
+                                                class="form-check-input">
+                                            <label for="remember" class="form-check-label">মনে রাখুন</label>
+                                        </div>
+                                        <button type="submit" class="btn btn-success ms-auto">
+                                            লগিন
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="card-footer py-3 border-0">
+                                <div class="text-center">
+                                    নতুন একাউন্ট তৈরি করুন! <a href="" class="text-primary">সাইন আপ</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Jumbotron -->
+    </section>
+    <!-- Section: Design Block -->
+
+    <!-- footer top -->
+
+    <footer class="pt-5 pb-4 footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-col-1">
+                        <h4 class="heading-text">গুরুত্বপূর্ণ লিংক সমূহ</h4>
+                        <ul class="nav flex-column footer-nav">
+                            <li class="nav-item"><a class="nav-link pb-0" target="_blank"
+                                    href="https://pmo.gov.bd/">Prime
+                                    Minister's
+                                    Office</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" target="_blank"
+                                    href="https://mof.gov.bd/">Ministry of
+                                    Finance</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" target="_blank"
+                                    href="http://ipf.org.bd/">Institute of
+                                    Public Finance (IPF)</a></li>
+                            <li class="nav-item"><a class="nav-link pb-0" target="_blank"
+                                    href="https://spfms.gov.bd/">SPFMS</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link pb-0" target="_blank"
+                                    href="http://seip-fd.gov.bd/">SEIP</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link pb-0" target="_blank"
+                                    href="https://upension.gov.bd/">National
+                                    Pension Authority</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-col-2">
+                        <h4 class="heading-text">যোগাযোগ</h4>
+                        <ul class="nav flex-column footer-nav">
+                            <li class="nav-item"><a class="nav-link" target="_blank" href="">অর্থ বিভাগ</a></li>
+                            <li class="nav-item"><a class="nav-link" target="_blank" href="">অর্থ মন্ত্রণালয়</a></li>
+                            <li class="nav-item"><a class="nav-link" target="_blank" href="">বাংলাদেশ সচিবালয়</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-col-3">
+                        <h4 class="heading-text">সহায়তা</h4>
+                        <ul class="nav flex-column footer-nav">
+                            <li class="nav-item"><a class="nav-link" target="_blank" href="">কিভাবে প্রিন্ট করবেন</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" target="_blank" href="">কিভাবে অনুসন্ধান করবেন</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" target="_blank" href="">শব্দকোষ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-col-4">
+                        <h4 class="heading-text">মতামত ও ফিডব্যাক</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- login modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="text-center mb-3">
+                        <h3>Login</h3>
+                    </div>
+                    <form accept="#" method="post">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-success">Login</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- bootstrap js -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+    <!-- template js -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
